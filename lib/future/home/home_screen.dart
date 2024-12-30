@@ -17,6 +17,8 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _currentIndex = 0;
   String resp = '';
+  Dio dio = Dio();
+
   final List<Widget> _screens = [
     HomeBodyWidget(),
     ExpensesScreen(),
@@ -24,7 +26,10 @@ class _HomeScreenState extends State<HomeScreen> {
     ProfileScreen()
   ];
 
-  Dio dio = Dio();
+  @override
+  void initState() {
+    super.initState();
+  }
 
   _onTap (value) {
     if(mounted) {
@@ -34,10 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
-  @override
-  void initState() {
-    super.initState();
-  }
+
 
   @override
   Widget build(BuildContext context) {

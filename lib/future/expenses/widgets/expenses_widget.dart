@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 
 class ExpensesWidget extends StatelessWidget {
-  ExpensesWidget({super.key});
+  List<dynamic> categories;
+
+  ExpensesWidget({
+    super.key,
+    required this.categories
+  });
 
   String? _selectedCategory;
 
