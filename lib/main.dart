@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData.dark().copyWith(
+      theme: ThemeData(
         inputDecorationTheme: InputDecorationTheme(
           focusedBorder: OutlineInputBorder(
             borderSide: BorderSide(color: Colors.green, width: 2),
@@ -33,6 +33,7 @@ class MyApp extends StatelessWidget {
               borderRadius: BorderRadius.circular(12)
           ),
         ),
+        scaffoldBackgroundColor: Color(0xffF1FFF3)
       ),
       home: HomeScreen(),
     );

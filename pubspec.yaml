@@ -12,6 +12,8 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.8
   dio: ^5.7.0
+  percent_indicator: ^4.2.4
+  flutter_svg: ^2.0.16
 
 dev_dependencies:
   flutter_test:
@@ -20,4 +22,16 @@ dev_dependencies:
   flutter_lints: ^5.0.0
 
 flutter:
+  assets:
+    - assets/icons/analytic_icon.svg
+    - assets/icons/arrow_in_cube_down_icon.svg
+    - assets/icons/arrow_in_cube_up_icon.svg
+    - assets/icons/car_icon.svg
+    - assets/icons/done_in_cube_icon.svg
+    - assets/icons/fork_and_knife_icon.svg
+    - assets/icons/home_icon.svg
+    - assets/icons/money_icon.svg
+    - assets/icons/transfers_icon.svg
+    - assets/icons/person_icon.svg
+
   uses-material-design: true

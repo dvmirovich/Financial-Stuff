@@ -43,13 +43,14 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: HomeAppBarWidget(),
-      body: _screens[_currentIndex],
-      bottomNavigationBar: HomeBottomNavbarWidget(
-        onTap: _onTap,
-        currentIndex: _currentIndex,
-      ),
+    return SafeArea(
+      child: Scaffold(
+        body: _screens[_currentIndex],
+        bottomNavigationBar: HomeBottomNavbarWidget(
+          onTap: _onTap,
+          currentIndex: _currentIndex,
+        ),
+      )
     );
   }
 }
